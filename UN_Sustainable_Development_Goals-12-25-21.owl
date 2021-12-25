@@ -1,0 +1,481 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xml:base="http://www.w3.org/1999/02/22-rdf-syntax-ns"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+     xmlns:nd="http://franz.com/ns/allegrograph/5.0/geo/nd#"
+     xmlns:err="http://www.w3.org/2005/xqt-errors#"
+     xmlns:fti="http://franz.com/ns/allegrograph/2.2/textindex/"
+     xmlns:ns1="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:ndfn="http://franz.com/ns/allegrograph/5.0/geo/nd/fn#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:keyword="http://franz.com/ns/keyword#">
+    <owl:Ontology about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#description -->
+
+    <owl:AnnotationProperty about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#description">
+        <ns1:description>A property for the textual description of the entity. Originally I was using the rdfs:comment property but I thought it made more sense to have a separate property and leave comments for developer comments. Still needs to be an annotation property since it can apply to classes and properties as well as individuals.</ns1:description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#index -->
+
+    <owl:AnnotationProperty about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#index">
+        <ns1:description>Number used to identify goals and other measures</ns1:description>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#hasIndicator -->
+
+    <owl:ObjectProperty about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#hasIndicator">
+        <owl:inverseOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#isIndicatorFor"/>
+        <rdfs:domain resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <rdfs:range resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#isIndicatorFor -->
+
+    <owl:ObjectProperty about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#isIndicatorFor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#AffordableAndCleanEnergy -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#AffordableAndCleanEnergy">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">7</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#CleanWaterAndSanitation -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#CleanWaterAndSanitation">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">6</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#ClimateAction -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#ClimateAction">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">13</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#DecentWorkAndEconomicGrowth -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#DecentWorkAndEconomicGrowth">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">8</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#GenderEquality -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#GenderEquality">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">5</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#GoodHealthAndWellBeing -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#GoodHealthAndWellBeing">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">3</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#IndustryInnovationAndInfrastructure -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#IndustryInnovationAndInfrastructure">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">9</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#LifeBelowWater -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#LifeBelowWater">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">14</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#LifeOnLand -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#LifeOnLand">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">15</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPoverty -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPoverty">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:description>End poverty in all its forms everywhere</ns1:description>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">1</ns1:index>
+        <rdfs:seeAlso datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://sdgs.un.org/goals/goal1</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#PartnershipsForTheGoals -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#PartnershipsForTheGoals">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">17</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#PeaceJusticeAndStrongInstitutions -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#PeaceJusticeAndStrongInstitutions">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">16</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#QualityEducation -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#QualityEducation">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">4</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#ReducedInequalities -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#ReducedInequalities">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">10</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#ResponsibleConsumptionAndProduction -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#ResponsibleConsumptionAndProduction">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">12</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableCitiesAndCommunities -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableCitiesAndCommunities">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">11</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#ZeroHunger -->
+
+    <owl:Class about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#ZeroHunger">
+        <rdfs:subClassOf resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#SustainableDevelopmentGoal"/>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#integer">2</ns1:index>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-1-1 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-1-1">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)</ns1:description>
+        <ns1:index>1.1.1</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-2-1 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-2-1">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of population living below the national poverty line, by sex and age</ns1:description>
+        <ns1:index>1.2.1</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-2-2 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-2-2">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</ns1:description>
+        <ns1:index>1.2.2</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-3-1 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-3-1">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of population covered by social protection floors/systems, by sex, distinguishing children, unemployed persons, older persons, persons with disabilities, pregnant women, newborns, work-injury victims and the poor and the vulnerable</ns1:description>
+        <ns1:index>1.3.1</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-4-1 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-4-1">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of population living in households with access to basic services</ns1:description>
+        <ns1:index>1.4.1</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-4-2 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-4-2">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of total adult population with secure tenure rights to land, with legally recognized documentation and who perceive their rights to land as secure, by sex and by type of tenure</ns1:description>
+        <ns1:index>1.4.2</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-1 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-1">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Number of deaths, missing persons and persons affected by disaster per 100,000 people</ns1:description>
+        <ns1:index>1.5.1</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-2 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-2">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Direct disaster economic loss in relation to global gross domestic product (GDP)</ns1:description>
+        <ns1:index>1.5.2</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-3 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-3">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Number of countries with national and local disaster risk reduction strategies</ns1:description>
+        <ns1:index>1.5.3</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-4 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-4">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of local governments that adopt and implement local disaster risk reduction strategies in line with national disaster risk reduction strategies</ns1:description>
+        <ns1:index>1.5.4</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-a-1 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-a-1">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of resources allocated by the government directly to poverty reduction programmes</ns1:description>
+        <ns1:index>1.a.1</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-a-2 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-a-2">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of total government spending on essential services (education, health and social protection)</ns1:description>
+        <ns1:index>1.a.2</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-b-1 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-b-1">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#Indicator"/>
+        <ns1:description>Proportion of government recurrent and capital spending to sectors that disproportionately benefit women, the poor and vulnerable groups</ns1:description>
+        <ns1:index>1.b.1</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-1 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-1">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPoverty"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-1-1"/>
+        <ns1:description>By 2030, eradicate extreme poverty for all people everywhere, currently measured as people living on less than $1.25 a day</ns1:description>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#decimal">1.1</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-2 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-2">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPoverty"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-2-1"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-2-2"/>
+        <ns1:description>By 2030, reduce at least by half the proportion of men, women and children of all ages living in poverty in all its dimensions according to national definitions</ns1:description>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#decimal">1.2</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-3 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-3">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPoverty"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-3-1"/>
+        <ns1:description>Implement nationally appropriate social protection systems and measures for all, including floors, and by 2030 achieve substantial coverage of the poor and the vulnerable</ns1:description>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#decimal">1.3</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-4 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-4">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPoverty"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-4-1"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-4-2"/>
+        <ns1:description>By 2030, ensure that all men and women, in particular the poor and the vulnerable, have equal rights to economic resources, as well as access to basic services, ownership and control over land and other forms of property, inheritance, natural resources, appropriate new technology and financial services, including microfinance</ns1:description>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#decimal">1.4</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-5 -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-5">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPoverty"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-1"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-2"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-3"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-5-4"/>
+        <ns1:description>By 2030, build the resilience of the poor and those in vulnerable situations and reduce their exposure and vulnerability to climate-related extreme events and other economic, social and environmental shocks and disasters</ns1:description>
+        <ns1:index datatype="http://www.w3.org/2001/XMLSchema#decimal">1.5</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-a -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-a">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPoverty"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-a-1"/>
+        <ns1:hasIndicator resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyIndicator1-a-2"/>
+        <ns1:description>Ensure significant mobilization of resources from a variety of sources, including through enhanced development cooperation, in order to provide adequate and predictable means for developing countries, in particular least developed countries, to implement programmes and policies to end poverty in all its dimensions</ns1:description>
+        <ns1:index>1.a</ns1:index>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-b -->
+
+    <owl:NamedIndividual about="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPovertyTarget1-b">
+        <type resource="http://www.semanticweb.org/mdebe/ontologies/UN_SDG#NoPoverty"/>
+        <ns1:description>Create sound policy frameworks at the national, regional and international levels, based on pro-poor and gender-sensitive development strategies, to support accelerated investment in poverty eradication actions</ns1:description>
+        <ns1:index>1.b</ns1:index>
+    </owl:NamedIndividual>
+</RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
