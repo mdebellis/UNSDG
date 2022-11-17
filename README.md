@@ -1,5 +1,6 @@
 # UNSDG
-United Nations Sustainable Development Goals
+United Nations Sustainable Development Goals Ontology
+
 This is a small demonstration ontology of the UN Sustainable development goals. The goals can be found at: https://sdgs.un.org/goals 
 This ontology covers all of the Goals, Targets and Indicators. The ontology is based on the meta-data from the UN here: 
 https://unstats.un.org/sdgs/indicators/Global%20Indicator%20Framework%20after%202022%20refinement.English.xlsx
